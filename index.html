@@ -1,12 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DV 100 Formal Assessment Two</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+
+    <title>Formal Assessment Two: Class One</title>
+  </head>
+
+  <body>
+
+    <div class="row">
+      <form class="col-5 form">
+        <h3>Student Registration</h3>
+        <input type="text" class="form-control" placeholder="First Name" id="first">
+        <input type="text" class="form-control" placeholder="Last Name" id="last">
+        <input type="text" class="form-control" placeholder="Student Number" id="number">
+        <p>Subject Choice One:</p>
+        <select class="form-control" id="subOne">
+          <option>Select An Option</option>
+          <option>Interactive Development</option>
+          <option>Interaction Design</option>
+          <option>Product Design</option>
+          <option>Photography</option>
+          <option>Game Design</option>
+        </select>
+        <p>Subject Choice Two:</p>
+        <select class="form-control" id="subTwo">
+          <option>Select An Option</option>
+          <option>Interactive Development</option>
+          <option>Interaction Design</option>
+          <option>Product Design</option>
+          <option>Photography</option>
+          <option>Game Design</option>
+        </select>
+
+        <div class="base-check">
+          <input class="form-check-input" type="radio" name="baseRadio" id="one" value="First Year">
+          <label class="form-check-label" for="deep">
+            First Year
+          </label>
+        </div>
+        <div class="base-check">
+          <input class="form-check-input" type="radio" name="baseRadio" id="two" value="Second Year">
+          <label class="form-check-label" for="deep">
+            Second Year
+          </label>
+        </div>
+        <div class="base-check">
+          <input class="form-check-input" type="radio" name="baseRadio" id="three" value="Third Year">
+          <label class="form-check-label" for="deep">
+            Third Year
+          </label>
+        </div>
+        <button class="btn btn-primary" type="button">Register Student</button>
+      </form>
+      
+      <div class="col-7 output">
+        <h3>Class List</h3>
+        <div class="row" id="studentOut">
+
+          <!-- This is the example element -->
+          <div class="col-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Student Name</h5>
+                <p>Student Number: value</p>
+                <p>Year: value</p>
+                <p>Choice One: value</p>
+                <p>Choice Two: value</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div> 
+      </div>
+    </div>
+
     
-</body>
+    
+  </body>
 </html>
+
