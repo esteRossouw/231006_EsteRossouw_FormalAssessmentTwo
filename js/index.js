@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   <h5 class="card-title">${student.firstName} ${student.lastName}</h5>
                   <p>Student Number: ${student.studentNumber}</p>
                   <p>Year: ${student.year}</p>
-                  <p>Choice One: ${student.subjectOne}</p>
-                  <p>Choice Two: ${student.subjectTwo}</p>
+                  <p>Choice One: ${student.subOne}</p>
+                  <p>Choice Two: ${student.subTwo}</p>
                 </div>
               </div>
             `;
@@ -29,8 +29,8 @@ function logStudent() {
     const firstName = document.getElementById('first').value;
     const lastName = document.getElementById('last').value;
     const studentNumber = document.getElementById('number').value;
-    const subjectOne = document.getElementById('subOne').value;
-    const subjectTwo = document.getElementById('subTwo').value;
+    const subOne = document.getElementById('subOne').value;
+    const subTwo = document.getElementById('subTwo').value;
     let year = '';
 
     const yearRadios = document.getElementsByName('baseRadio')
@@ -45,8 +45,8 @@ function logStudent() {
         firstName,
         lastName,
         studentNumber,
-        subjectOne,
-        subjectTwo,
+        subOne,
+        subTwo,
         year
     };
     classList.push(student);
@@ -54,8 +54,8 @@ function logStudent() {
     document.getElementById('first').value = '';
     document.getElementById('last').value = '';
     document.getElementById('number').value = '';
-    document.getElementById('subjectOne').selectedIndex = 0;
-    document.getElementById('subjectTwo').selectedIndex = 0;
+    document.getElementById('subOne').selectedIndex = 0;
+    document.getElementById('subTwo').selectedIndex = 0;
     for (const radio of yearRadios) {
       radio.checked = false;
     }
