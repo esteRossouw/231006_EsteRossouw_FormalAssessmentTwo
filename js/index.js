@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   <h5 class="card-title">${student.firstName} ${student.lastName}</h5>
                   <p>Student Number: ${student.studentNumber}</p>
                   <p>Year: ${student.year}</p>
-                  <p>Choice One: ${student.choiceOne}</p>
-                  <p>Choice Two: ${student.choiceTwo}</p>
+                  <p>Choice One: ${student.subjectOne}</p>
+                  <p>Choice Two: ${student.subjectTwo}</p>
                 </div>
               </div>
             `;
@@ -54,8 +54,8 @@ function logStudent() {
     document.getElementById('first').value = '';
     document.getElementById('last').value = '';
     document.getElementById('number').value = '';
-    document.getElementById('subOne').selectedIndex = 0;
-    document.getElementById('subTwo').selectedIndex = 0;
+    document.getElementById('subjectOne').selectedIndex = 0;
+    document.getElementById('subjectTwo').selectedIndex = 0;
     for (const radio of yearRadios) {
       radio.checked = false;
     }
