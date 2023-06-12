@@ -64,5 +64,6 @@ function logStudent() {
 
 registerBtn.addEventListener('click', logStudent);
 
+
 updateClassList();
 });
